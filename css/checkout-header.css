@@ -1,0 +1,90 @@
+
+header {
+    left: 100px;
+    right: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    background: #fff;
+}
+
+header .left-section {
+    display: flex;
+    height: 35px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+header .left-section .amazon-logo {
+    width: 110px;
+    height: 35px;
+}
+
+header .left-mobile-section {
+    display: none;
+}
+
+header .left-mobile-section .amazon-mobile-logo {
+    width: 40px;
+    height: 35px;
+}
+
+header .middle-section {
+    display: flex;
+    justify-content: center;
+    flex: 3;
+    height: 35px;
+}
+
+header .middle-section .checkout {
+    font-size: 25px;
+}
+
+header .middle-section .checkout .quantity {
+    color: rgb(0, 113, 133);
+}
+
+header .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    height: 35px;
+}
+
+header .right-section .lock {
+    width: 19px;
+    height: 23px;
+}
+
+@media (max-width: 576px) {
+    header {
+        left: 20px;
+        right: 20px;
+    }
+
+    header .left-section {
+        display: none;
+    }
+
+    header .left-mobile-section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+        height: 35px;
+    }
+
+    header .middle-section {
+        flex: 2;
+        align-items: center;
+    }
+
+    header .middle-section .checkout {
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="css/checkout-header.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <header>
+        <section class="left-section">
+            <a href="index.html"><img class="amazon-logo" src="https://supersimple.dev/projects/amazon/images/amazon-logo.png" alt=""></a>
+        </section>
+        <section class="left-mobile-section">
+            <img class="amazon-mobile-logo" src="https://supersimple.dev/projects/amazon/images/amazon-mobile-logo.png" alt="">
+        </section>
+        <section class="middle-section"><span class="checkout">Checkout (<span class="quantity">0 items</span>)</span></section>
+        <section class="right-section">
+            <img class="lock" src="https://supersimple.dev/projects/amazon/images/icons/checkout-lock-icon.png" alt="">
+        </section>
+    </header>
+    <main>
+        <span class="review-text">Review your order</span>
+        <div class="sections">
+            <section class="product-cards"></section>
+            <section class="payment-card">
+                <div class="blockOne">
+                    <span class="payment-title">Order Summary</span>
+                    <div class="items-quantity">
+                        <span class="js-quantity-items">Items(0):</span>
+                        <span class="js-order-before-tax-sum">$105.68</span>
+                    </div>
+                    <div class="shipping-handling">
+                        <span>Shipping & handling:</span>
+                        <span class="shipping-sum">$0.00</span>
+                    </div>
+                    <div class="tax-before">
+                        <span>Total before tax:</span>
+                        <span class="js-order-before-tax-sum">$105.68</span>
+                    </div>
+                    <div class="tax-summary">
+                        <span>Estimated tax (10%):</span>
+                        <span class="js-order-tax-sum">$10.56</span>
+                    </div>
+                </div>
+                <div class="blockTwo">
+                    <div class="order-total">
+                        <span class="total-sum-order">Order total:</span>
+                        <span class="js-total-sum-order">$116.24</span>
+                    </div>
+                    <div class="paypal">
+                        <span class="paypal-text">Use PayPal</span>
+                        <input type="checkbox" class="paypal-checkbox">
+                    </div>
+                    <button class="paypal-btn">
+                        <span class="paypal-btn-text"><i>Pay<span class="pal-part">Pal</span></i></span>
+                    </button>
+                    <button class="credit-debit-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                          <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
+                          <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"/>
+                        </svg>
+                        <span class="credit-debit-btn-text">Debit or Credit Card</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

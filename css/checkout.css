@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    right: 100px;
+}
+
+main .review-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main .sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .sections .product-cards {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+main .sections .product-cards .product-card {
+    border: solid 0.5px grey;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+main .sections .product-cards .product-card .card-title {
+    color: rgb(0, 118, 0);
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+main .sections .product-cards .product-card .order-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .sections .product-cards .product-card .order-info .product-description {
+    display: flex;
+    flex: 1.5;
+}
+
+main .sections .product-cards .product-card .order-info .product-description .info {
+    display: flex;
+    flex-direction: column;
+}
+
+main .sections .product-cards .product-card .order-info .product-description .order-image {
+    max-width: 200px;
+    height: 120px;
+    margin-right: 50px;
+}
+
+main .sections .product-cards .product-card .order-info .product-description .product-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    max-width: 90%;
+}
+
+main .sections .product-cards .product-card .order-info .product-description .product-price {
+    font-weight: bold;
+    color: rgb(177, 39, 4);
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+main .sections .product-cards .product-card .order-info .product-description .quantity {
+    font-size: 17px;
+}
+
+main .sections .product-cards .product-card .order-info .product-description .delete-btn {
+    color: #fff;
+    background: #c33f1e;
+    width: 75px;
+    height: 30px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+main .sections .product-cards .product-card .order-info .delivery-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main .sections .product-cards .product-card .order-info .delivery-block .block-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main .sections .product-cards .product-card .order-info .delivery-block .radios {
+    display: flex;
+    flex-direction: column;
+}
+
+main .sections .product-cards .product-card .order-info .delivery-block .radios .radioBox {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+main .sections .product-cards .product-card .order-info .delivery-block .radios .radioBox .shipping-info {
+    margin-left: 15px;
+    color: rgb(0, 118, 0);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+main .sections .product-cards .product-card .order-info .delivery-block .radios .radioBox .shipping-info .shipping-info-inner {
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+main .sections .product-cards .product-card .order-info .delivery-block .checkbox {
+    width: 18px;
+    height: 18px;
+}
+
+
+main .sections .payment-card {
+    flex: 1;
+    border: solid 0.5px grey;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-height: 400px;
+    margin-bottom: 25px;
+}
+
+main .sections .payment-card .blockOne{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px rgb(222, 222, 222);
+}
+
+main .sections .payment-card .blockOne .payment-title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main .sections .payment-card .blockOne .items-quantity,
+main .sections .payment-card .blockOne .shipping-handling,
+main .sections .payment-card .blockOne .tax-before,
+main .sections .payment-card .blockOne .tax-summary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+main .sections .payment-card .blockOne .shipping-handling .shipping-sum {
+    height: 30px;
+    width: 50px;
+    text-align: right;
+    border-bottom: solid 1px rgb(222, 222, 222);
+}
+
+main .sections .payment-card .blockTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+main .sections .payment-card .blockTwo .order-total {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(177, 39, 4);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+main .sections .payment-card .blockTwo .paypal {
+    display: flex;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+main .sections .payment-card .blockTwo .paypal .paypal-text {
+    margin-right: 10px;
+}
+
+main .sections .payment-card .blockTwo .paypal .paypal-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+main .sections .payment-card .blockTwo .paypal-btn,
+main .sections .payment-card .blockTwo .credit-debit-btn {
+    background: #f3ba38;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+main .sections .payment-card .blockTwo .paypal-btn .paypal-btn-text {
+    font-size: 21px;
+    color: #003088;
+    font-weight: 800;
+}
+
+main .sections .payment-card .blockTwo .paypal-btn .paypal-btn-text .pal-part {
+    color: #4a7ebf;
+}
+
+main .sections .payment-card .blockTwo .credit-debit-btn {
+    background: #212121;
+    color: #fff;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .sections .payment-card .blockTwo .credit-debit-btn .credit-debit-btn-text {
+    margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+    main {
+        left: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    main .review-text {
+        text-align: center;
+    }
+
+    main .sections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .sections .product-cards {
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    main .sections .product-cards .product-card .order-info {
+        flex-direction: column;
+    }
+
+    main .sections .product-cards .product-card .order-info .product-description {
+        margin-bottom: 20px;
+    }
+
+    main .sections .product-cards .product-card .order-info .product-description .info {
+        flex: 1;
+    }
+
+    main .sections .product-cards .product-card .order-info .delivery-block {
+        margin-bottom: 10px;
+    }
+
+    main .sections .payment-card {
+        min-width: 350px;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        max-height: 475px;
+        margin-bottom: 25px;
+    }
+
+    main .sections .payment-card .blockOne,
+    main .sections .payment-card .blockTwo{
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+}
+

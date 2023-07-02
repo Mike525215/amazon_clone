@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 216, 20);
+}
+
+main {
+    position: absolute;
+    top: 75px;
+}
+
+main .css-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+main .css-grid .product-card {
+    border: solid 1px rgb(231, 231, 231);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+main .css-grid .product-card .prod-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin: 10px 15px 10px 15px;
+}
+
+main .css-grid .product-card .prod-image .product-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main .css-grid .product-card .product-title {
+    font-size: 16px;
+    height: 40px;
+    color: #212121;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+main .css-grid .product-card .product-price {
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+
+main .css-grid .product-card .quantity {
+    width: 40px;
+    height: 25px;
+    border-radius: 7.5px;
+    margin-bottom: 20px;
+}
+
+
+main .css-grid .product-card .add-button {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .css-grid .product-card .product-added {
+    color: rgb(7, 172, 19);
+    font-size: 17px;
+    margin-bottom: 30px;
+    height: 20px;
+}
+main .css-grid .product-card .add-button .add-to-cart-btn {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: rgb(255, 216, 20);
+    box-shadow: 0.5px 0.5px 5px grey;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    main .css-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    main .css-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    main .css-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    main .css-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 451px) {
+    main .css-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
